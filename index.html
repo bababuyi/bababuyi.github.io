@@ -19,11 +19,8 @@
       --tag-bg: #1e1a17;
       --tag-border: #3a2e26;
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     html { scroll-behavior: smooth; }
-
     body {
       background: var(--bg);
       color: var(--text);
@@ -32,7 +29,6 @@
       line-height: 1.7;
       min-height: 100vh;
     }
-
     /* NOISE OVERLAY */
     body::before {
       content: '';
@@ -43,7 +39,6 @@
       z-index: 0;
       opacity: 0.4;
     }
-
     /* NAV */
     nav {
       position: fixed;
@@ -57,7 +52,6 @@
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
     }
-
     .nav-logo {
       font-family: 'Syne', sans-serif;
       font-weight: 800;
@@ -66,13 +60,11 @@
       text-decoration: none;
       letter-spacing: 0.05em;
     }
-
     .nav-links {
       display: flex;
       gap: 2.5rem;
       list-style: none;
     }
-
     .nav-links a {
       color: var(--muted);
       text-decoration: none;
@@ -81,9 +73,7 @@
       text-transform: uppercase;
       transition: color 0.2s;
     }
-
     .nav-links a:hover { color: var(--text); }
-
     /* HERO */
     .hero {
       min-height: 100vh;
@@ -94,7 +84,6 @@
       position: relative;
       overflow: hidden;
     }
-
     .hero-eyebrow {
       font-size: 0.75rem;
       letter-spacing: 0.2em;
@@ -105,7 +94,6 @@
       align-items: center;
       gap: 0.75rem;
     }
-
     .hero-eyebrow::before {
       content: '';
       display: inline-block;
@@ -113,7 +101,6 @@
       height: 1px;
       background: var(--accent);
     }
-
     .hero h1 {
       font-family: 'Syne', sans-serif;
       font-weight: 800;
@@ -123,12 +110,10 @@
       color: var(--text);
       max-width: 14ch;
     }
-
     .hero h1 span {
       color: var(--accent);
       display: block;
     }
-
     .hero-sub {
       margin-top: 2rem;
       color: var(--muted);
@@ -136,14 +121,12 @@
       max-width: 44ch;
       line-height: 1.8;
     }
-
     .hero-cta {
       display: flex;
       gap: 1rem;
       margin-top: 2.5rem;
       flex-wrap: wrap;
     }
-
     .btn {
       display: inline-flex;
       align-items: center;
@@ -158,29 +141,24 @@
       transition: all 0.2s;
       cursor: pointer;
     }
-
     .btn-primary {
       background: var(--accent);
       border-color: var(--accent);
       color: var(--bg);
     }
-
     .btn-primary:hover {
       background: var(--accent2);
       border-color: var(--accent2);
     }
-
     .btn-ghost {
       background: transparent;
       border-color: var(--border);
       color: var(--text);
     }
-
     .btn-ghost:hover {
       border-color: var(--accent);
       color: var(--accent);
     }
-
     /* Large background text */
     .hero-bg-text {
       position: absolute;
@@ -196,7 +174,6 @@
       line-height: 1;
       white-space: nowrap;
     }
-
     /* SECTIONS */
     section {
       padding: 6rem 4rem;
@@ -204,7 +181,6 @@
       position: relative;
       z-index: 1;
     }
-
     .section-label {
       font-size: 0.7rem;
       letter-spacing: 0.2em;
@@ -215,7 +191,6 @@
       align-items: center;
       gap: 0.75rem;
     }
-
     .section-label::after {
       content: '';
       flex: 1;
@@ -223,7 +198,6 @@
       background: var(--border);
       max-width: 4rem;
     }
-
     /* ABOUT */
     .about-grid {
       display: grid;
@@ -231,7 +205,6 @@
       gap: 5rem;
       align-items: start;
     }
-
     .about-text h2 {
       font-family: 'Syne', sans-serif;
       font-weight: 700;
@@ -239,25 +212,21 @@
       line-height: 1.2;
       margin-bottom: 1.5rem;
     }
-
     .about-text p {
       color: var(--muted);
       margin-bottom: 1rem;
       font-size: 0.9rem;
     }
-
     .skills-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 0;
     }
-
     .skill-group {
       padding: 1.5rem;
       border: 1px solid var(--border);
       margin: -1px 0 0 -1px;
     }
-
     .skill-group-label {
       font-size: 0.65rem;
       letter-spacing: 0.2em;
@@ -265,24 +234,20 @@
       color: var(--accent);
       margin-bottom: 0.75rem;
     }
-
     .skill-group ul {
       list-style: none;
       display: flex;
       flex-direction: column;
       gap: 0.3rem;
     }
-
     .skill-group li {
       font-size: 0.82rem;
       color: var(--text);
     }
-
     .skill-group li::before {
       content: '→ ';
       color: var(--muted);
     }
-
     /* PROJECTS */
     .projects-grid {
       display: grid;
@@ -291,7 +256,6 @@
       background: var(--border);
       border: 1px solid var(--border);
     }
-
     .project-card {
       background: var(--bg);
       padding: 2rem;
@@ -300,25 +264,21 @@
       gap: 1rem;
       transition: background 0.2s;
     }
-
     .project-card:hover {
       background: var(--bg3);
     }
-
     .project-header {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
       gap: 1rem;
     }
-
     .project-title {
       font-family: 'Syne', sans-serif;
       font-weight: 700;
       font-size: 1.1rem;
       color: var(--text);
     }
-
     .project-engine {
       font-size: 0.65rem;
       letter-spacing: 0.12em;
@@ -330,26 +290,22 @@
       white-space: nowrap;
       flex-shrink: 0;
     }
-
     .project-role {
       font-size: 0.72rem;
       color: var(--muted);
       letter-spacing: 0.05em;
     }
-
     .project-desc {
       font-size: 0.85rem;
       color: var(--muted);
       line-height: 1.7;
       flex: 1;
     }
-
     .project-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 0.4rem;
     }
-
     .tag {
       font-size: 0.65rem;
       letter-spacing: 0.1em;
@@ -359,7 +315,6 @@
       border: 1px solid var(--border);
       padding: 0.2rem 0.5rem;
     }
-
     .project-links {
       display: flex;
       gap: 0.75rem;
@@ -368,7 +323,6 @@
       padding-top: 1rem;
       border-top: 1px solid var(--border);
     }
-
     .project-link {
       font-size: 0.72rem;
       letter-spacing: 0.1em;
@@ -380,27 +334,25 @@
       align-items: center;
       gap: 0.3rem;
     }
-
     .project-link:hover { color: var(--text); }
-
     .project-link.disabled {
       color: var(--border);
       cursor: default;
       pointer-events: none;
     }
-
     /* FEATURED PROJECT */
     .project-card.featured {
       grid-column: 1 / -1;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
       padding: 2.5rem;
     }
-
-    .featured-left { display: flex; flex-direction: column; gap: 1rem; }
-    .featured-right { display: flex; flex-direction: column; justify-content: space-between; gap: 1rem; }
-
+    .featured-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
     .featured-badge {
       display: inline-block;
       font-size: 0.65rem;
@@ -410,9 +362,27 @@
       background: rgba(232,147,90,0.08);
       border: 1px solid rgba(232,147,90,0.2);
       padding: 0.25rem 0.75rem;
-      width: fit-content;
     }
-
+    /* project-media: used for GIF / screenshot embeds */
+    .project-media {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+    }
+    .project-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
     /* CONTACT */
     .contact-inner {
       display: grid;
@@ -420,7 +390,6 @@
       gap: 5rem;
       align-items: center;
     }
-
     .contact-left h2 {
       font-family: 'Syne', sans-serif;
       font-weight: 800;
@@ -428,25 +397,21 @@
       line-height: 1.1;
       margin-bottom: 1.5rem;
     }
-
     .contact-left h2 em {
       font-style: normal;
       color: var(--accent);
     }
-
     .contact-left p {
       color: var(--muted);
       font-size: 0.88rem;
       max-width: 38ch;
     }
-
     .contact-links {
       display: flex;
       flex-direction: column;
       gap: 0;
       border: 1px solid var(--border);
     }
-
     .contact-item {
       display: flex;
       justify-content: space-between;
@@ -456,23 +421,18 @@
       text-decoration: none;
       transition: background 0.2s;
     }
-
     .contact-item:last-child { border-bottom: none; }
-
     .contact-item:hover { background: var(--bg3); }
-
     .contact-item-label {
       font-size: 0.7rem;
       letter-spacing: 0.15em;
       text-transform: uppercase;
       color: var(--muted);
     }
-
     .contact-item-value {
       font-size: 0.85rem;
       color: var(--text);
     }
-
     /* FOOTER */
     footer {
       padding: 2rem 4rem;
@@ -481,23 +441,19 @@
       justify-content: space-between;
       align-items: center;
     }
-
     footer p {
       font-size: 0.72rem;
       color: var(--muted);
     }
-
     /* ANIMATIONS */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(24px); }
       to   { opacity: 1; transform: translateY(0); }
     }
-
     .hero-eyebrow { animation: fadeUp 0.6s ease both; }
     .hero h1      { animation: fadeUp 0.6s 0.1s ease both; }
     .hero-sub     { animation: fadeUp 0.6s 0.2s ease both; }
     .hero-cta     { animation: fadeUp 0.6s 0.3s ease both; }
-
     /* RESPONSIVE */
     @media (max-width: 900px) {
       nav { padding: 1rem 1.5rem; }
@@ -507,11 +463,9 @@
       .about-grid { grid-template-columns: 1fr; gap: 3rem; }
       .skills-grid { grid-template-columns: 1fr 1fr; }
       .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
-      .project-card.featured { grid-template-columns: 1fr; }
       footer { padding: 1.5rem; flex-direction: column; gap: 0.5rem; text-align: center; }
       .projects-grid { grid-template-columns: 1fr; }
     }
-
     @media (max-width: 500px) {
       .nav-links { display: none; }
       .skills-grid { grid-template-columns: 1fr; }
@@ -519,7 +473,6 @@
   </style>
 </head>
 <body>
-
   <!-- NAV -->
   <nav>
     <a class="nav-logo" href="#">BH</a>
@@ -550,19 +503,25 @@
     <div class="section-label">About</div>
     <div class="about-grid">
       <div class="about-text">
-        <h2>Building systems that feel good to play.</h2>
+        <h2>Building systems that make worlds feel alive.</h2>
         <p>
-          BSc Computer Game Development graduate from Asia Pacific University, Kuala Lumpur.
-          I specialise in gameplay programming, AI behaviour, and editor tooling across
-          Unreal Engine and Unity.
+          At 12, Assassin's Creed turned me into an accidental history student. I wasn't
+          a reader — the game made me want to be one. I started wondering how it was all
+          built, and that question hasn't left me.
         </p>
         <p>
-          I've shipped projects solo and in teams — from a branching visual novel in UE5
-          to a VR bowling game and a mobile endless runner. I'm open to remote roles and
-          relocation opportunities in Malaysia and Europe.
+          The AI kept pulling me deeper. Far Cry 2 guards who tracked you by sound. Horizon
+          Zero Dawn machines running as an interconnected ecosystem. I was sketching state
+          machines on paper years before university gave me vocabulary for them. I'm drawn
+          to the logic underneath — the rules that make a world feel like it's thinking.
         </p>
         <p>
-          Languages: English · Shona · Portuguese · Spanish (basic)
+          I'm from Zimbabwe. Chengetedzo — a financial literacy simulation I built for
+          microfinance communities back home — came out of wanting to make something useful
+          for people I knew. Open to remote roles and relocation.
+        </p>
+        <p>
+          Panelist at Button Bash. Languages: English · Shona · Portuguese (Brazilian, fluent) · Spanish (basic)
         </p>
       </div>
       <div class="skills-grid">
@@ -607,65 +566,15 @@
     <div class="section-label">Projects</div>
     <div class="projects-grid">
 
-      <!-- FEATURED: Reflection of the Mind -->
+      <!-- Chengetedzo — pinned first -->
       <div class="project-card featured">
-        <div class="featured-left">
-          <span class="featured-badge">★ Featured Project</span>
-          <div class="project-title" style="font-size:1.4rem;">Reflection of the Mind</div>
-          <div class="project-role">Solo Developer — Programmer · Artist · Writer · Designer</div>
-          <div class="project-desc">
-            A 2D puzzle visual novel built in Unreal Engine 5. Player choices drive a branching
-            dialogue system that influences character behaviour and narrative progression.
-            Puzzle mechanics are woven directly into the story, with all UI, art, and narrative
-            created by me from scratch.
+        <div class="featured-header">
+          <div>
+            <div class="project-title" style="font-size:1.4rem;">Chengetedzo</div>
+            <div class="project-role">Programmer · Designer</div>
           </div>
-          <div class="project-tags">
-            <span class="tag">Branching Dialogue</span>
-            <span class="tag">Puzzle Design</span>
-            <span class="tag">UMG UI</span>
-            <span class="tag">Solo Dev</span>
-          </div>
-        </div>
-        <div class="featured-right">
-          <div style="background:var(--bg3); border:1px solid var(--border); aspect-ratio:16/9; display:flex; align-items:center; justify-content:center; color:var(--muted); font-size:0.75rem; letter-spacing:0.1em;">
-            [ ADD SCREENSHOT ]
-          </div>
-          <div class="project-links">
-            <a class="project-link" href="https://github.com/bababuyi/Reflection-Of-The-Mind" target="_blank">↗ GitHub</a>
-            <a class="project-link disabled" href="#">Itch.io — Coming Soon</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Unity Scene Auditor -->
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-title">Unity Scene Auditor</div>
-          <span class="project-engine">Unity Tool</span>
-        </div>
-        <div class="project-role">Tools Programmer</div>
-        <div class="project-desc">
-          A Unity Editor extension that exports and audits scene hierarchies, transforms,
-          components, and script variables. Useful for debugging wiring issues and documenting
-          complex scenes. Actively maintained with new features in development.
-        </div>
-        <div class="project-tags">
-          <span class="tag">Editor Tooling</span>
-          <span class="tag">C#</span>
-          <span class="tag">Unity</span>
-        </div>
-        <div class="project-links">
-          <a class="project-link" href="https://github.com/bababuyi/UnitySceneAuditor" target="_blank">↗ GitHub</a>
-        </div>
-      </div>
-
-      <!-- Chengetedzo -->
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-title">Chengetedzo</div>
           <span class="project-engine">Unity</span>
         </div>
-        <div class="project-role">Programmer · Designer</div>
         <div class="project-desc">
           A financial literacy simulation game teaching real-life money management —
           income, household expenses, insurance, savings, microloans, and emergencies
@@ -679,6 +588,64 @@
         <div class="project-links">
           <a class="project-link" href="https://github.com/bababuyi/Chengetedzo" target="_blank">↗ GitHub</a>
           <a class="project-link" href="https://babazw.itch.io/chengetedzo" target="_blank">↗ Itch.io</a>
+        </div>
+      </div>
+
+      <!-- Reflection of the Mind -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-title">Reflection of the Mind</div>
+          <span class="project-engine">UE5</span>
+        </div>
+        <div class="project-role">Solo Developer — Programmer · Artist · Writer · Designer</div>
+        <div class="project-desc">
+          A 2D puzzle visual novel built in Unreal Engine 5. Player choices drive a branching
+          dialogue system that influences character behaviour and narrative progression.
+          Puzzle mechanics are woven directly into the story, with all UI, art, and narrative
+          created by me from scratch.
+        </div>
+        <div class="project-tags">
+          <span class="tag">Branching Dialogue</span>
+          <span class="tag">Puzzle Design</span>
+          <span class="tag">UMG UI</span>
+          <span class="tag">Solo Dev</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/bababuyi/Reflection-Of-The-Mind" target="_blank">↗ GitHub</a>
+          <a class="project-link disabled" href="#">Itch.io — Coming Soon</a>
+        </div>
+      </div>
+
+      <!-- CatBurglar -->
+      <!-- TODO: replace src with your actual GIF path, e.g. "assets/catburglar-ai.gif" -->
+      <!-- TODO: add screenshot paths in additional <img> tags or a second .project-media block -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-title">CatBurglar</div>
+          <span class="project-engine">Unity</span>
+        </div>
+        <div class="project-role">AI Programmer · Game Designer</div>
+        <div class="project-media">
+          <img
+            src="assets/catburglar-ai.gif"
+            alt="CatBurglar — AI behaviour demonstration"
+            onerror="this.style.display='none'; this.parentElement.textContent='[ ADD GIF — AI BEHAVIOUR ]'"
+          />
+        </div>
+        <div class="project-desc">
+          A stealth game built in Unity featuring a custom Finite State Machine enemy AI —
+          patrol, alert, and chase states driven by player proximity and line-of-sight detection.
+          Guards adapt dynamically to sound and movement cues, creating reactive stealth gameplay.
+        </div>
+        <div class="project-tags">
+          <span class="tag">Finite State Machine</span>
+          <span class="tag">Enemy AI</span>
+          <span class="tag">Stealth</span>
+          <span class="tag">C#</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/bababuyi/CatBurglar" target="_blank">↗ GitHub</a>
+          <a class="project-link disabled" href="#">Itch.io — Coming Soon</a>
         </div>
       </div>
 
@@ -731,24 +698,25 @@
         </div>
       </div>
 
-      <!-- Just Bowling VR -->
+      <!-- Unity Scene Auditor -->
       <div class="project-card">
         <div class="project-header">
-          <div class="project-title">Just Bowling VR</div>
-          <span class="project-engine">Unity VR</span>
+          <div class="project-title">Unity Scene Auditor</div>
+          <span class="project-engine">Unity Tool</span>
         </div>
-        <div class="project-role">Gameplay &amp; UI Programmer · Artist</div>
+        <div class="project-role">Tools Programmer</div>
         <div class="project-desc">
-          Physics-based VR bowling game. Implemented grab, aim, and release interaction
-          logic alongside collision-driven ball mechanics and VR-friendly UI systems.
+          A Unity Editor extension that exports and audits scene hierarchies, transforms,
+          components, and script variables. Useful for debugging wiring issues and documenting
+          complex scenes. Actively maintained with new features in development.
         </div>
         <div class="project-tags">
-          <span class="tag">VR</span>
-          <span class="tag">Physics</span>
-          <span class="tag">XR Interaction</span>
+          <span class="tag">Editor Tooling</span>
+          <span class="tag">C#</span>
+          <span class="tag">Unity</span>
         </div>
         <div class="project-links">
-          <a class="project-link disabled" href="#">Private Project</a>
+          <a class="project-link" href="https://github.com/bababuyi/UnitySceneAuditor" target="_blank">↗ GitHub</a>
         </div>
       </div>
 
@@ -796,6 +764,5 @@
     <p>© 2026 Baraka Tineyi Homodza</p>
     <p>Built with HTML · Hosted on GitHub Pages</p>
   </footer>
-
 </body>
 </html>
