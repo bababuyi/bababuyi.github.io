@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Baraka Homodza — Game Programmer</title>
+  <title>Baraka Homodza | Game Programmer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
   <style>
@@ -534,7 +534,7 @@
     <div class="hero-eyebrow">Available for remote &amp; relocation</div>
     <h1>Baraka<span>Homodza.</span></h1>
     <p class="hero-sub">
-      Game programmer specialising in Unreal Engine &amp; Unity — building gameplay systems,
+      Game programmer specialising in Unreal Engine &amp; Unity, building gameplay systems,
       AI behaviour, and tools that ship.
     </p>
     <div class="hero-cta">
@@ -564,16 +564,16 @@
         </p>
         <p>
           Fun fact: I speak 3 languages and understand 4. I was an exchange student in
-          Brazil, and somewhere along the way I picked up Spanish by accident — I'd speak
+          Brazil, and somewhere along the way I picked up Spanish by accident. I'd speak
           Portuguese to my Mexican friends and they'd reply in Spanish, and it just clicked.
           Então, se você vier falar comigo em português, eu agradeceria muito.
         </p>
         <div class="strengths">
           <div class="skill-group-label">Core Strengths</div>
           <ul>
-            <li>Gameplay and simulation systems that survive iteration — economies, progression, save systems.</li>
-            <li>Enemy AI that drives pacing — FSMs, perception, multi-agent behaviour.</li>
-            <li>Editor tools that kill manual work — scene auditing, data pipelines.</li>
+            <li>Gameplay and simulation systems that survive iteration: economies, progression, save systems.</li>
+            <li>Enemy AI that drives pacing: FSMs, perception, multi-agent behaviour.</li>
+            <li>Editor tools that kill manual work: scene auditing, data pipelines.</li>
             <li>Data-driven content workflows (DataTables, ScriptableObjects) so designers can add content without touching code.</li>
           </ul>
         </div>
@@ -631,7 +631,7 @@
     <div class="section-label">Projects</div>
     <div class="projects-grid">
 
-      <!-- Chengetedzo — pinned first -->
+      <!-- Chengetedzo: pinned first -->
       <div class="project-card featured">
         <div class="featured-header">
           <div>
@@ -642,11 +642,10 @@
         </div>
         <div class="project-desc">
           A financial literacy simulation of Zimbabwean household life, commissioned by
-          Aubik Business Solutions — to be published as part of a financial-education
-          product alongside an AI insurance chatbot. A 24-month simulation with three
-          playable profiles, 100+ weighted events with chains and seasonal filters,
-          eight insurance types, loans, savings, and JSON save persistence — plus a
-          headless mode for automated stress-testing.
+          Aubik Business Solutions and released in July 2026. A 24-month simulation
+          with three playable profiles, 100+ weighted events with chains and seasonal
+          filters, eight insurance types, loans, savings, and JSON save persistence,
+          plus a headless mode for automated stress-testing.
         </div>
         <div class="project-tags">
           <span class="tag">Simulation</span>
@@ -666,14 +665,9 @@
           <span class="project-engine">UE5</span>
         </div>
         <div class="project-role">Gameplay Programmer · 7-day jam, Jun 2026 · Art by Nate &amp; Shephard, UI by Kekouh</div>
-        <!-- TODO: drop a gameplay GIF in here. Save it as assets/two-weak-notice.gif and
-             uncomment the block below. A short loop of the chair spinning up and
-             wall-boosting is the strongest single visual on this page. -->
-        <!--
         <div class="project-media">
-          <img src="assets/two-weak-notice.gif" alt="The chair spinning up and wall-boosting across the office floor">
+          <img src="assets/two-weak-notice.jpg" alt="Two office enemies closing in across the open-plan office floor" loading="lazy">
         </div>
-        -->
         <div class="project-desc">
           A Blueprint-only office-chair combat game built in seven days for the Serious
           Game Jam (theme: "Spin to win"). I wrote all gameplay. The chair disables its
@@ -698,16 +692,50 @@
         </div>
       </div>
 
+      <!-- Late For My Own Show -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-title">Late For My Own Show</div>
+          <span class="project-engine">UE5</span>
+        </div>
+        <div class="project-role">Solo Developer · 7-day jam, Sep 2026</div>
+        <div class="project-media">
+          <img src="assets/late-for-my-own-show.jpg" alt="The ragdoll headliner crowd-surfing over a sea of hands under red and orange stage lights" loading="lazy">
+        </div>
+        <div class="project-desc">
+          A Blueprint-only ragdoll physics game built solo in seven days for Free Lives'
+          Physics Jam 2026 (theme: "Surfing", unofficial entry). You're the headliner,
+          you're late, and the crowd is the only way to the stage. The player never moves
+          directly: roughly 4,000 hand actors each run their own overlap check and push
+          whatever lands on them, with no central crowd controller, so the wave you ride
+          is thousands of local impulses adding up. Three poses reshape how every push
+          lands, trading speed for stability. Data-driven crowd zones override the hands
+          inside them and drive coloured stage lights so the player can read the crowd
+          ahead. Shipped a packaged Windows build after tracking down a Shipping-only
+          crash in hardware ray tracing setup that never showed in PIE.
+        </div>
+        <div class="project-tags">
+          <span class="tag">Physics</span>
+          <span class="tag">Ragdoll</span>
+          <span class="tag">Blueprints</span>
+          <span class="tag">Data-Driven Design</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/bababuyi/LateForMyOwnShow" target="_blank">↗ GitHub</a>
+          <a class="project-link" href="https://babazw.itch.io/late-for-my-own-show" target="_blank">↗ Itch.io</a>
+        </div>
+      </div>
+
       <!-- Reflection of the Mind -->
       <div class="project-card">
         <div class="project-header">
           <div class="project-title">Reflection of the Mind</div>
           <span class="project-engine">UE5</span>
         </div>
-        <div class="project-role">Solo Developer — Programmer · Artist · Writer · Designer · Mar–Jul 2025 · C++ rework in progress</div>
+        <div class="project-role">Solo Developer: Programmer · Artist · Writer · Designer · Mar–Jul 2025 · C++ rework in progress</div>
         <div class="project-desc">
           A psychological therapy game built in Unreal Engine 5.5 as my final-year
-          project — a fully playable vertical slice (Chapter 1, three acts). Data-driven
+          project: a fully playable vertical slice (Chapter 1, three acts). Data-driven
           branching dialogue on DataTables, a persistent trust system that branches the
           narrative per act, and five reusable UMG puzzle widgets triggered straight
           from dialogue rows. Currently migrating from Widget Blueprints to C++ with
@@ -732,10 +760,10 @@
           <div class="project-title">CatBurglar</div>
           <span class="project-engine">Unity</span>
         </div>
-        <div class="project-role">Solo — AI Programmer &amp; Designer · Apr–May 2026</div>
+        <div class="project-role">Solo AI Programmer &amp; Designer · Apr–May 2026</div>
         <div class="project-desc">
           A stealth prototype built to push my AI programming: two interacting FSM
-          agents — an 8-state grandma whose window-closing routine doubles as the level
+          agents: an 8-state grandma whose window-closing routine doubles as the level
           timer, and a 7-state dog with pinning, carrying, and bark-based alerts that
           escalate to the grandma. Escape rules across three animated window types tie
           level pacing directly to the AI's routines.
@@ -761,7 +789,7 @@
         <div class="project-desc">
           A fast, three-lane endless runner with procedurally spawned tiles, obstacles,
           and pickups. Started as a university team project (my part: procedural tile
-          and wall spawning, plus 3D assets), then rebuilt solo — rewrote nearly all
+          and wall spawning, plus 3D assets), then rebuilt solo. I rewrote nearly all
           systems with event-driven managers, adaptive difficulty, a two-stage health
           model, four power-ups with a 10-level upgrade shop, and persistent progression.
           Remodelled the world and new props in Blender; refined a teammate's
@@ -788,7 +816,7 @@
         <div class="project-role">Tools Programmer · Feb 2026 – present</div>
         <div class="project-desc">
           A Unity Editor extension that exports and audits scene hierarchies, transforms,
-          components, and script variables — born during Chengetedzo development to hunt
+          components, and script variables. Born during Chengetedzo development to hunt
           reference errors and diff scenes, now used across my Unity projects and
           actively extended.
         </div>
@@ -812,7 +840,7 @@
       <div class="contact-left">
         <h2>Let's build something <em>great.</em></h2>
         <p>
-          Open to game programming roles — remote or relocation.
+          Open to game programming roles, remote or relocation.
           Experienced with Unreal Engine and Unity across gameplay, AI, VR, and tooling.
         </p>
       </div>
